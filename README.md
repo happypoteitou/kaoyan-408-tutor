@@ -1,23 +1,40 @@
-﻿# Kaoyan 408 Tutor Skill
+# Kaoyan 408 Tutor Skill
 
-一个面向 `408 计算机学科专业基础综合` 备考场景的 Codex Skill。
+> 一个面向 `408 计算机学科专业基础综合` 的辅导型 Codex Skill。  
+> 不只是给答案，更强调 `讲清楚`、`纠正误区`、`互动追问` 和 `检查是否真正理解`。
 
-它的目标不是只给答案，而是像老师一样辅导学生理解 `数据结构`、`计算机组成原理`、`操作系统`、`计算机网络` 这四门核心内容，尤其适合拿来处理：
+[![Repo](https://img.shields.io/badge/GitHub-happypoteitou%2Fkaoyan--408--tutor-181717?logo=github)](https://github.com/happypoteitou/kaoyan-408-tutor)
+[![Skill](https://img.shields.io/badge/Skill-kaoyan--408--tutor-2ea44f)](./kaoyan-408-tutor/SKILL.md)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
-- 408 选择题、判断题、应用题、错题订正
-- 易混概念对比，比如 `进程/线程`、`分页/分段`、`Cache/虚拟存储`
-- 分层讲解、考点总结、互动追问、理解检查
+## 这是什么
 
-## 简介
+`Kaoyan 408 Tutor Skill` 是一个专门为了中国计算机考研 `408` 场景设计的技能包。
 
-这个 Skill 会让模型更像一个 `408 考研辅导老师`，而不是一个通用问答助手。
+它的目标不是只回答“正确选项是什么”，而是尽量模拟一个靠谱的 408 辅导老师，帮助学生在下面这些场景里更快进入状态：
 
-它支持两种主要风格：
+- 刷 408 选择题、判断题、应用题、错题订正
+- 区分高频易混概念，比如 `进程/线程`、`分页/分段`、`Cache/虚拟存储`
+- 做分层讲解、题眼分析、易错点提醒、复习建议
+- 做互动追问，检查学生是不是真的懂了
 
-- `标准辅导模式`：先给结论，再讲题眼、分析过程、易错点和记忆方法
-- `互动辅导模式`：除了讲解，还会主动追问一个小问题，检查学生是否真的理解了
+## 主要能力
 
-仓库内容如下：
+这个 Skill 现在重点支持四门课：
+
+- `数据结构`
+- `计算机组成原理`
+- `操作系统`
+- `计算机网络`
+
+它有两种核心工作方式：
+
+- `标准辅导模式`
+  先给结论，再讲题眼、分析过程、易错点和记忆方法。
+- `互动辅导模式`
+  不只解释，还会追问一个小问题，检查学生能不能复述、对比或迁移这个知识点。
+
+## 仓库内容
 
 - [kaoyan-408-tutor/SKILL.md](./kaoyan-408-tutor/SKILL.md)：Skill 主文件
 - [kaoyan-408-tutor/references/subject-map.md](./kaoyan-408-tutor/references/subject-map.md)：四门学科映射与互动追问参考
@@ -27,7 +44,7 @@
 
 把 `kaoyan-408-tutor` 文件夹作为一个 Skill 使用即可。
 
-适合的提问方式示例：
+### 提问示例
 
 ```text
 帮我按 408 的方式讲清楚进程和线程的区别
@@ -45,7 +62,7 @@
 帮我复习 408 操作系统，按高频考点给我列一个复习顺序
 ```
 
-推荐使用方式：
+### 推荐用法
 
 1. 直接抛出一道 408 真题或错题
 2. 如果你只想刷题，明确说 `只要答案` 或 `简短一点`
@@ -54,7 +71,15 @@
 
 ## 下载方法
 
-### 方法 1：直接下载整个仓库
+### 方法 1：下载发布版 `.skill`
+
+前往 Releases 页面下载：
+
+[https://github.com/happypoteitou/kaoyan-408-tutor/releases](https://github.com/happypoteitou/kaoyan-408-tutor/releases)
+
+下载其中的 `kaoyan-408-tutor.skill` 即可。
+
+### 方法 2：下载整个仓库 ZIP
 
 打开仓库首页：
 
@@ -66,23 +91,24 @@
 
 下载后解压，取出里面的 `kaoyan-408-tutor` 文件夹即可。
 
-### 方法 2：只下载 Skill 目录
-
-如果你只关心 Skill 本体，拿到这个目录即可：
-
-`kaoyan-408-tutor/`
-
-其中至少需要保留：
-
-- `SKILL.md`
-- `references/subject-map.md`
-- `evals/evals.json`
-
 ### 方法 3：使用 Git 克隆
 
 ```bash
 git clone https://github.com/happypoteitou/kaoyan-408-tutor.git
 ```
+
+## 安装说明
+
+如果你的环境支持 Skill 文件安装，优先使用 release 里的 `.skill` 包。
+
+如果你是手动安装：
+
+1. 下载仓库或 Skill 目录
+2. 保留以下文件结构：
+   - `kaoyan-408-tutor/SKILL.md`
+   - `kaoyan-408-tutor/references/subject-map.md`
+   - `kaoyan-408-tutor/evals/evals.json`
+3. 把 `kaoyan-408-tutor` 目录放进你的 skills 目录中即可
 
 ## 适用场景
 
@@ -99,3 +125,6 @@ git clone https://github.com/happypoteitou/kaoyan-408-tutor.git
 - 如果问题涉及院校分数线、复试政策、最新考情等实时信息，建议额外查证
 - 如果你希望它更像国内考研老师的口吻，可以在使用时明确要求 `用中文考研老师的风格讲`
 
+## License
+
+MIT

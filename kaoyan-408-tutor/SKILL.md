@@ -1,4 +1,4 @@
-﻿---
+---
 name: kaoyan-408-tutor
 description: Use when the user is preparing for China's 408 computer science graduate entrance exam, asks about data structures, computer organization, operating systems, or computer networks, wants help solving 408-style multiple-choice or algorithm questions, or needs layered tutoring, misconception correction, interactive follow-up questions, and review guidance for 408 topics.
 ---
