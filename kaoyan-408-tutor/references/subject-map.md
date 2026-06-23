@@ -1,4 +1,4 @@
-﻿# 408 Subject Map
+# 408 Subject Map
 
 Use this reference when you need to orient a 408 question quickly or choose a response pattern.
 
