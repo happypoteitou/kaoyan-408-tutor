@@ -1,0 +1,35 @@
+﻿{
+  "skill_name": "kaoyan-408-tutor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I am practicing a 408 multiple-choice question about process vs thread. I always mix up resource allocation and scheduling. Do not just give the answer. Explain it in a 408 tutoring style and tell me why the other options are usually wrong.",
+      "expected_output": "Should identify this as an operating systems multiple-choice tutoring request, give the final answer first, explain process vs thread from the resource-allocation and scheduling viewpoints, and eliminate distractors with exam-oriented traps.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I keep making mistakes on 408 computer-organization questions about cache hit rate and average memory access time. Please create a small exam-style problem, solve it step by step, and point out the easiest mistake at each step.",
+      "expected_output": "Should behave like a tutor for computer organization, create a small calculation problem, solve it step by step, keep formulas and units explicit, and point out common mistakes such as confusing hit time and miss penalty.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Is this understanding correct for 408: because TCP is reliable, it is more suitable than UDP for all real-time applications. Please grade this like a 408 teacher correcting a mistake, point out exactly what is wrong, and give me an easy memory hook.",
+      "expected_output": "Should identify a computer networks misconception correction task, directly judge the statement, explain why reliability does not imply suitability for all real-time applications, and provide a concise corrected mental model plus a memory hook.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Teach me like a 408 teacher, not just an explainer. I always confuse paging and segmentation in operating systems. First explain the core difference, then ask me one short follow-up question to check whether I really got it.",
+      "expected_output": "Should enter interactive tutoring mode, identify the confusion pair, explain the core difference in a compact way, and ask exactly one useful checkpoint question rather than many generic questions.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I think cache and virtual memory are basically the same because both improve speed. Please do not only correct me. Walk me through the mistake and then challenge me with a tiny check question like a 408 tutor would.",
+      "expected_output": "Should identify a computer organization misconception, explicitly name the incorrect mental model, repair it with a contrast between cache and virtual memory, and end with a diagnostic mini-check question.",
+      "files": []
+    }
+  ]
+}
